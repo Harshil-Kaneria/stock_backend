@@ -1,0 +1,31 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "namespaceResolver.autoSort": false,
+  "artisan.maxBuffer": 2048009999999999,
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+  "editor.tabSize": 4,
+  "editor.interSpaces": true,
+  "editor.detectIndentation": false,
+  "settingsSync.ignoredSettings": [],
+  "files.associations": {
+    "*.js": "javascript"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.suggestSmartCommit": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.confirmSync": false,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "workbench.settings.applyToAllProfiles": [],
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}

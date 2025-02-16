@@ -1,0 +1,871 @@
+{
+	"info": {
+		"_postman_id": "fdcb51e2-e253-430d-bb7a-a7c4cbb156a8",
+		"name": "Nutriscan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24672543"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "login-register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "dev_hk_test@mailinator.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/public/api/v1/user/login-register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"api",
+								"v1",
+								"user",
+								"login-register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify-otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "secretId",
+									"value": "19fe62f2-c125-4083-80aa-1f67a4a087d6",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "4097",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/public/api/v1/user/verify-otp",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"api",
+								"v1",
+								"user",
+								"verify-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resend-otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "secretId",
+									"value": "a3555f05-94f1-45f1-9913-5ae520648a1c",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/public/api/v1/user/resend-otp",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"api",
+								"v1",
+								"user",
+								"resend-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "developer_hk",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "language",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "country",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "dob",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "workoutPerWeek",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "otherApp",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "isImperial",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "height",
+									"value": "5",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "heightUnit",
+									"value": "ft",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "heightSub",
+									"value": "8",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "heightSubUnit",
+									"value": "in",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "weight",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "weightUnit",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "goal",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "goalTarget",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "goalSpeed",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "stoppingGoal",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "diet",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "accomplish",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "profileImage",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "isNotificationOn",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "isProfileCompleted",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/user/update-profile",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"update-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "notification-data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/user/notification-data?page=2&limit=15",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"notification-data"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "limit",
+									"value": "15"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-profile-photo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profile_photo",
+									"type": "file",
+									"src": "/home/bhautik/Downloads/shubham-gawade-Pgx2f_f9I84-unsplash.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/user/update-profile-photo",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"update-profile-photo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-fcm-token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fcmToken",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/user/update-fcm-token",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"update-fcm-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user-details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/user/details",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "generate-recommendation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/user/generate-recommendation",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"generate-recommendation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetch-recommendation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/user/fetch-recommendation",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"fetch-recommendation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-recommendation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "calories",
+									"value": "1500",
+									"type": "text"
+								},
+								{
+									"key": "carbs",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "protine",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "fats",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/user/update-recommendation",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"update-recommendation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "datewise-progress",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/user/datewise-progress?date=2025-01-28",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"datewise-progress"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2025-01-28"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload-food-photo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "date",
+									"value": "2025-01-27",
+									"type": "text"
+								},
+								{
+									"key": "food_photo",
+									"type": "file",
+									"src": "/home/bhautik/Downloads/shubham-gawade-Pgx2f_f9I84-unsplash.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/user/upload-food-photo",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"upload-food-photo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetch-food-progress-data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/user/fetch-food-progress-data?id=4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"fetch-food-progress-data"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-food-recommendation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "userDailyProgressId",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "calories",
+									"value": "150",
+									"type": "text"
+								},
+								{
+									"key": "carbs",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "protine",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "fats",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/user/update-food-recommendation",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"update-food-recommendation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "chatbot-messages",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/user/chatbot-messages?page=1&limit=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"chatbot-messages"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "chatbot",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "isNewMessage",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "chatId",
+									"value": "1",
+									"description": "// when isNewMessage is false then req.",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "message",
+									"value": "update this new message another",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/user/chatbot",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"chatbot"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "policies",
+			"item": [
+				{
+					"name": "fetch-policies",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "privacy_policy",
+									"description": "('privacy_policy', 'terms_and_conditions')",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/public/api/v1/policies",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"api",
+								"v1",
+								"policies"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
