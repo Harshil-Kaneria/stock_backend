@@ -6,7 +6,7 @@ const fs = require("fs");
 const { v4: uuidv4 } = require('uuid');
 const { objectData } = require('../constant');
 const firebaseAdmin = require('firebase-admin');
-const serviceAccount = require('./nutriscan-5d33d-firebase-adminsdk-cvp6c-2a4ecfa9a9.json');
+const serviceAccount = require('./test.json');
 firebaseAdmin.initializeApp({ credential: firebaseAdmin.credential.cert(serviceAccount) });
 
 

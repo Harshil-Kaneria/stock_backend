@@ -4,7 +4,7 @@ module.exports = (data) => `
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutriscan - OTP</title>
+    <title>Stock indicator - OTP</title>
     <style>
         body {
             font-family: 'Roboto', Arial, sans-serif;
@@ -91,18 +91,18 @@ module.exports = (data) => `
 <body>
     <div class="email-container">
         <div class="header">
-            <h1>Welcome to Nutriscan!</h1>
+            <h1>Welcome to Stock indicator!</h1>
         </div>
         <div class="body">
             <p>Hi there,</p>
             <p>Your One-Time Password (OTP) for login is:</p>
             <p class="otp">${data.otp}</p>
             <p>Please keep it confidential and do not share it with anyone.</p>
-            <p>Thank you for choosing <strong>Nutriscan</strong>. If you didn’t request this, please ignore this email.</p>
+            <p>Thank you for choosing <strong>Stock indicator</strong>. If you didn't request this, please ignore this email.</p>
         </div>
         <div class="footer">
-            <p>&copy; ${new Date().getFullYear()} Nutriscan. All rights reserved.</p>
-            <p>Need help? <a href="mailto:support@nutriscan.com">Contact Support</a></p>
+            <p>&copy; ${new Date().getFullYear()} Stock indicator. All rights reserved.</p>
+            <p>Need help? <a href="mailto:support@test.com">Contact Support</a></p>
         </div>
     </div>
 </body>

@@ -2,7 +2,7 @@ module.exports = {
     development: {
         client: 'mysql2',
         connection: {
-            database: 'nutriscan',
+            database: 'stock_indicator',
             user: 'root',
             host: "localhost",
             port: "3306",
@@ -19,11 +19,11 @@ module.exports = {
     staging: {
         client: 'mysql2',
         connection: {
-            database: 'nutriscan',
+            database: 'stock_indicator',
             user: 'root',
             host: "localhost",
             port: "3306",
-            password: 'Dq0LDdfDWgEDb59'
+            password: ''
         },
         migrations: {
             directory: './src/migrations',
